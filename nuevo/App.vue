@@ -1,54 +1,36 @@
 <template>
-<nb-container>
-    <nb-header>
-      <nb-left>
-        <nb-button transparent>
-          <nb-icon :name="menu" />
-        </nb-button>
-      </nb-left>
-      <nb-body>
-        <nb-title>Header</nb-title>
-      </nb-body>
-      <nb-right />
-    </nb-header>
-    <nb-content padder>
-      <nb-text>{{mensg}}</nb-text>
-      <nb-item>
-        <nb-input v-model="mensg" />
-      </nb-item>
-    </nb-content>
-    <nb-footer>
-      <nb-footer-tab>
-        <nb-button active full>
-          <nb-text>Footer</nb-text>
-        </nb-button>
-      </nb-footer-tab>
-    </nb-footer>
-  </nb-container>
+    <app-navigation></app-navigation>
 </template>
 
 <script>
 import Vue from "vue-native-core";
 import { VueNativeBase } from "native-base";
+import { StackNavigator } from 'vue-native-router'
+
+import App from './src/screens/App.vue'
+import Loyal from './src/screens/Loyal.vue'
 
 Vue.use(VueNativeBase)
 
-export default {
-  data:function(){
-    return{
-      mensg:''
+//Con este se controlan las rutas dentro de la app
+const AppNavigation = StackNavigator(
+  {
+    App: { screen: App},
+    Loyal: { screen:Loyal }
+  },
+  {
+    initialRouteName: 'App',
+    //headerMode - es para poner la barra de navegacion oculta
+    //headerMode: "none"
+    title: 'Floppy',
+    headerStyle: {
+      backgroundColor: '#f4511e',
     }
-  }
+  },
+);
+
+export default {
+  components:{ AppNavigation }
+
 }
 </script>
-<style>
-.container {
-  background-color: white;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-}
-.text-color-primary {
-  color: blue;
-}
-</style>
