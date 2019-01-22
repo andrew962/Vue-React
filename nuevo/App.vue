@@ -21,11 +21,7 @@ const AppNavigation = StackNavigator(
   {
     initialRouteName: 'App',
     //headerMode - es para poner la barra de navegacion oculta
-    //headerMode: "none"
-    title: 'Floppy',
-    headerStyle: {
-      backgroundColor: '#f4511e',
-    }
+    headerMode: "none"
   },
 );
 

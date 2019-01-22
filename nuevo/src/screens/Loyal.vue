@@ -2,8 +2,8 @@
   <nb-container>
     <nb-header>
       <nb-left>
-        <nb-button transparent>
-          <nb-icon :name="menu" />
+        <nb-button transparent :onPress="back">
+          <nb-icon name="arrow-back" />
         </nb-button>
       </nb-left>
       <nb-body>
@@ -17,17 +17,20 @@
         <nb-input/>
       </nb-item>
     </nb-content>
-    <nb-footer>
-      <nb-footer-tab>
-        <nb-button active full>
-          <nb-text>Footer</nb-text>
-        </nb-button>
-      </nb-footer-tab>
-    </nb-footer>
   </nb-container>
 </template>
 <script>
 export default {
+  props: {
+    navigation: {
+      type: Object
+    }
+  },
+    methods: {
+        back:function(){
+            this.navigation.goBack()
+        }
+    },
     
 }
 </script>

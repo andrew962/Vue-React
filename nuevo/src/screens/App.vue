@@ -1,34 +1,21 @@
 <template>
-<nb-button :onPress="GoPress"><nb-text>Paso</nb-text></nb-button>  
-    <!--nb-container>
-    <nb-header>
-      <nb-left>
-        <nb-button transparent>
-          <nb-icon :name="menu" />
-        </nb-button>
-      </nb-left>
+<!--
+  :style="{ backgroundColor: '#fff' }" es para darle el color a mi header en este caso es rojo
+androidStatusBarColor="#" le da color a la barra de estado, es bueno poner estos dos juntos para tener el
+mismo color en tanto en el header como en la barra de estado
+-->
+    <nb-container>
+    <nb-header :style="{ backgroundColor: '#dc4239' }" androidStatusBarColor="#dc4239">
       <nb-body>
-        <nb-title>Header</nb-title>
+        <nb-title>Tablas de Multiplicar</nb-title>
       </nb-body>
-      <nb-right />
     </nb-header>
     <nb-content padder>
-      <nb-text></nb-text>
-      <nb-item>
-        <nb-input/>
-      </nb-item>
-        <nb-button v-model="GoPress">
-          <nb-text>Adelante</nb-text>
+        <nb-button :onPress="GoPress">
+          <nb-text>Paso</nb-text>
         </nb-button>
     </nb-content>
-    <nb-footer>
-      <nb-footer-tab>
-        <nb-button active full>
-          <nb-text>Footer</nb-text>
-        </nb-button>
-      </nb-footer-tab>
-    </nb-footer>
-  </nb-container-->
+  </nb-container>
   
 </template>
  <script>
