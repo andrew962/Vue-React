@@ -8,7 +8,8 @@ import { VueNativeBase } from "native-base";
 import { StackNavigator } from 'vue-native-router'
 
 import App from './src/screens/App.vue'
-import Loyal from './src/screens/Loyal.vue'
+import Tabla1 from './src/screens/Tabla1.vue'
+import Tabla2 from './src/screens/Tabla2.vue'
 
 Vue.use(VueNativeBase)
 
@@ -16,7 +17,8 @@ Vue.use(VueNativeBase)
 const AppNavigation = StackNavigator(
   {
     App: { screen: App},
-    Loyal: { screen:Loyal }
+    Tabla1: { screen:Tabla1 },
+    Tabla2: { screen:Tabla2 }
   },
   {
     initialRouteName: 'App',
@@ -27,6 +29,5 @@ const AppNavigation = StackNavigator(
 
 export default {
   components:{ AppNavigation }
-
 }
 </script>
