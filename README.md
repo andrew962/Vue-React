@@ -48,3 +48,43 @@ module.exports.transform = function({ src, filename, options }) {
 };
 
 ```
+
+Tambien debemos crear este archivo `rn-cli.config.js`, y agregar este codigo
+```javascript
+module.exports = {
+	getTransformModulePath() {
+		return require.resolve("./vueTransformerPlugin.js");
+	},
+	getSourceExts() {
+		return ["vue"];
+	}
+};
+```
+
+### Renombrar el archivo
+Como vemos en nuestro proyecto tenemos un archivo llamado `App.js` debemos renombrar el archivo `App.js` a `App.vue` pegarle este codigo.
+
+```javascript
+<template>
+  <view class="container">
+    <text class="text-color-primary">My Vue Native App</text>
+    </view>
+</template>
+
+<style>
+.container {
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.text-color-primary {
+  color: blue;
+}
+</style>
+```
+
+# Corre la aplicación
+```sh
+react-native run-android
+```
