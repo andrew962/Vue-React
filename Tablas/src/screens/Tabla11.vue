@@ -7,7 +7,7 @@
         </nb-button>
       </nb-left>
       <nb-body>
-        <nb-title>Tabla #3</nb-title>
+        <nb-title>Tabla #{{num}}</nb-title>
       </nb-body>
       <nb-right />
     </nb-header>
@@ -28,7 +28,7 @@ export default {
   data(){
     return{
       valor:12,
-      num:3
+      num:11
     }
   },
     methods: {
