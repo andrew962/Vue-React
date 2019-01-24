@@ -17,9 +17,9 @@ $ cd <nombre-de-la-carpeta>
 $ react-native init <projectName> /* Recomendable nombra el proyecto igual que el proyecto con la version(0.55.4)
 ```
 
-Cuando ya se halla creado el proyecto con la version mas actual de react-native (0.57.3), dentro se nos habra creado una carpeta llamada ** android **, debemos por cuenta propia copiar la carpeta ** android ** y pegarla en nuestro proyecto que creamos con la version (0.55.4), y reemplazamos.
+Cuando ya se halla creado el proyecto con la version mas actual de react-native (0.57.3), dentro se nos habra creado una carpeta llamada `android`, debemos por cuenta propia copiar la carpeta  `android` y pegarla en nuestro proyecto que creamos con la version (0.55.4), y reemplazamos.
 
-Ya podemos entrar al proyecto que creamos con la versión de react-native (0.55.4)
+Ya podemos entrar al proyecto que creamos con la versión de react-native (0.55.4), y instalamos vue-native `vueTransformerPlugin.js`
 ```sh
 $ cd <nombre-de-la-carpeta>
 $ npm install vue-native-core vue-native-helper --save
