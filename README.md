@@ -9,7 +9,8 @@ $ react-native init <projectName> --version 0.55.4
 ```
 > La version 0.55.4 es la recomendada para implementar vue-native en el proyecto
 
-### Luego debemos crear otra carpeta pero con la version mas actual de react-native
+### Luego debemos crear otra carpeta
+>  Dentro de esta carpeta debemos crear un proyecto con react-native con su version mas actual.
 ```sh
 $ mkdir <nombre-de-la-carpeta>
 $ cd <nombre-de-la-carpeta>
