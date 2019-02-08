@@ -24,12 +24,7 @@ import { Toast } from "native-base";
 import Firebase,{functions} from 'firebase'
 
 let config = {
-    apiKey: "AIzaSyDY3tozZrY7i7ssDqL2v8TF6WeuOg_0krE",
-    authDomain: "smart-998ba.firebaseapp.com",
-    databaseURL: "https://smart-998ba.firebaseio.com",
-    projectId: "smart-998ba",
-    storageBucket: "",
-    messagingSenderId: "433923891520"
+
   };
 let app = Firebase.initializeApp(config);
 let db = app.database();
