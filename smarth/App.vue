@@ -6,15 +6,17 @@
 
 <script>
 import Vue from "vue-native-core";
-import { VueNativeBase,Root } from "native-base";
+import { VueNativeBase,Root,Toast } from "native-base";
 import { StackNavigator } from 'vue-native-router'
 import App from './src/screens/App.vue'
+import Lista from './src/screens/Lista.vue'
 
 Vue.use(VueNativeBase)
 
 const AppNavigation = StackNavigator(
   {
-    App: { screen:App }
+    App: { screen:App },
+    Lista: { screen:Lista }
   },
   {
     initialRouteName: 'App',
