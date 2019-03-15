@@ -12,7 +12,7 @@
                 <nb-card-item>
                     <nb-body>
                         <nb-text>Ingresa los datos</nb-text>
-                        <nb-text>Ten en cuanta que si ingresas algun dato mal, la operación estara mal</nb-text>
+                        <nb-text>Ten en cuenta que si ingresas algún dato mal, la operación estará mal</nb-text>
                     </nb-body>            
                 </nb-card-item>
             </nb-card>
